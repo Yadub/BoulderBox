@@ -65,6 +65,11 @@ header, footer *{
 	font-size: 10em;
 }
 
+header ul {
+	list-style:none;
+  padding-left:0;
+}
+
 .contact li {
   display: inline-block;
   padding: 0 10px;
