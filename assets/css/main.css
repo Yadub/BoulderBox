@@ -1284,13 +1284,14 @@
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
 			transform: translateX(0);
-			width: 50%;
+			width: 48%; /* Editted for white space around images from 50% */
 			position: relative;
 			opacity: 1.0;
+			margin: 2px; /* Added for white space around images */
 		}
 
 			.gallery article .image {
-				margin: 0;
+				margin: 1px; /* Added for white space around images */
 				display: block;
 			}
 
