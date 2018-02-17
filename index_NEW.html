@@ -105,17 +105,23 @@
 				<div class="content">
 					<header>
 						<h2>Suscribe</h2>
-						<p>Stay up to date and get the latest information regarding the space</p>
+						<p>Stay up to date about our latest developments</p>
 					</header>
 					<div class="box">
-						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVosNCV0v99YDuP4sOt5rqAGq286Q_Psfl1LagsQoObwXVkA/viewform?embedded=true#start=embed" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-						<!-- <form method="post" action="#">
+						<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxk14xtg_rt81yoenC68Pqmka9aSH3tZmgW8RX430s4BvWlsW-X/exec">
 							<div class="field half first"><input type="text" name="name" placeholder="Name" /></div>
 							<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
+							<!-- <div class="field"><textarea name="message" placeholder="Message" rows="3"></textarea></div> -->
 							<ul class="actions">
-								<li><input type="submit" value="Enter" /></li>
+								<li><input type="submit" value="Submit" /></li>
 							</ul>
-						</form> -->
+						</form>
+						<div style="display:none;" id="thankyou_message">
+							<h3>Thanks!</h3>
+							<p>
+								We will let you know as soon as we are ready for opening
+							<p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -139,6 +145,8 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<!-- Submit the Form to Google Using "AJAX" -->
+			<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
 
 	</body>
 </html>
