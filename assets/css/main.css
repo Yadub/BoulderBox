@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
+@font-face {
+  font-family: 'Mont';
+	src: url('../fonts/Mont-Book.otf');
+}
 
 /*
 	Big Picture by HTML5 UP
@@ -410,7 +414,7 @@
 			transform-origin: 50% 50%;
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: "Mont", FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -476,7 +480,7 @@
 /* Type */
 
 	body, input, textarea, select {
-		font-family: "Source Sans Pro", "sans-serif";
+		font-family: "Mont", "Source Sans Pro", "sans-serif";
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -886,7 +890,7 @@
 
 		.icon:before {
 			display: inline-block;
-			font-family: FontAwesome;
+			font-family: "Mont", FontAwesome;
 			font-size: 1.25em;
 			text-decoration: none;
 			font-style: normal;
