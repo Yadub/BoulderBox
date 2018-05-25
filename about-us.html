@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Fri May 25 2018 19:30:49 GMT+0000 (UTC)  -->
+<html data-wf-page="5afd25f9577f2b5fcca81593" data-wf-site="5af93e3da9b84e2196b89aab" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BoulderBox</title>
+  <meta content="Philosophy, team, and journey of BoulderBox, New Delhi." name="description">
+  <meta content="Philosophy, team, and journey of BoulderBox, New Delhi." property="og:description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/boulderbox.webflow.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/BB_flavicon_export.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/BB_webclip.png" rel="apple-touch-icon">
+  <style>
+.w-lightbox-caption {
+color: white;
+}
+</style>
+  <style>
+.timeline {
+  display: flex;
+  background-color: #031625;
+}
+.tl-item {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item:before, .tl-item:after {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.tl-item:after {
+  background: rgba(16, 34, 74, 0.85);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.tl-item:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) translateY(50%);
+          transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.tl-item:hover:after {
+  opacity: 0;
+}
+.tl-item:hover:before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) translateY(0);
+          transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+  transition: opacity 1s ease, transform 1s ease 0.25s, -webkit-transform 1s ease 0.25s;
+}
+.tl-item:hover .tl-content {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item:hover .tl-bg {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+.tl-content {
+  -webkit-transform: translate3d(0, 0, 0) translateY(25px);
+          transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+.tl-content h3 {
+  text-transform: uppercase;
+  color: #ffbf00;
+}
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.tl-bg {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+@media screen and (min-width:1200px) {
+  .timeline:hover .tl-item {
+    width: 23.3333%;
+  }
+  .tl-item {
+    width: 25%;
+  }
+  .tl-item:before, .tl-item:after {
+    width: 100%;
+  }
+  .tl-item:hover {
+    width: 30% !important;
+  }
+}
+@media screen and (min-width:480px) and (max-width:1200px) {
+  .timeline { flex-wrap: wrap;  }
+  .tl-item {
+    width: 50%;
+  }
+  .tl-item:before, .tl-item:after {
+    width: 100%;
+  }
+}
+@media screen and (max-width:480px) {
+  .timeline { flex-wrap: wrap;  }
+  .tl-item {
+    width: 100%;
+  }
+  .tl-item:before, .tl-item:after {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body class="body">
+  <div data-ix="preloader" class="page-loader"></div>
+  <div data-ix="page-wrapper-load" class="page-wrapper">
+    <div class="contact-popup">
+      <div class="popup-wrapper">
+        <div class="contact-popup-window w-form">
+          <form id="gform" name="wf-form-Contact-Popup-Form" data-name="Contact Popup Form" method="post" action="https://script.google.com/a/boulderbox.in/macros/s/AKfycbzIc0PiuMjwAwOKo4fVZzKivUA2oRZdkHK8OKkMphgrSsBgsZY/exec" class="contact-window-form">
+            <a href="#" data-ix="hide-contact-popup" class="minimize-icon w-inline-block">
+              <div class="minimize-icon-line"></div>
+            </a>
+            <h3>Contact Us</h3><input type="text" id="name" name="name" data-name="name" placeholder="Enter your name" maxlength="256" class="input w-input"><input type="email" class="input w-input" maxlength="256" name="email" data-name="email" placeholder="Enter your email address (required)" id="email" required=""><textarea id="message" name="message" placeholder="How can we help you?" maxlength="5000" data-name="message" class="input text-area w-input"></textarea>
+            <div id="subscribe" class="w-checkbox"><input type="checkbox" id="subscribe" name="subscribe" data-name="subscribe" checked="" class="w-checkbox-input"><label for="subscribe" class="grey-text w-form-label">Subscribe</label></div><input type="submit" value="Submit Message" data-wait="Please wait..." class="button form-button w-button"></form>
+          <div class="form-success window-success w-form-done">
+            <div class="grey-text">Thank you! Your submission has been received!</div>
+          </div>
+          <div class="form-error window-error w-form-fail">
+            <div>Oops! Something went wrong while submitting the form</div>
+          </div>
+        </div>
+        <div data-ix="hide-contact-popup" class="popup-overlay"></div>
+      </div><a data-ix="show-contact-popup" href="#" class="contact-float-button w-inline-block"><img src="images/mail-icon.svg"></a></div>
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-ix="nav-bar" data-w-id="c4a01758-b412-54bd-d15b-da61b7713854" class="nav-bar-fixed-dark-bg w-nav">
+      <div class="wrapper w-container"><a href="index.html" data-ix="logo" id="top-logo" class="logo-link-thin w-nav-brand"><img src="images/BB_logo_white.svg" class="image-10"><div class="div-block-8"></div><img src="images/Logo_102x15_white.svg" width="204" class="image-nav-logo-thin-navbar"></a>
+        <nav role="navigation" class="nav-menu-thin w-nav-menu">
+          <div data-hover="1" data-delay="100" class="dropdown-2 w-dropdown">
+            <div class="nav-link-thin dropdown nav-link-white w-dropdown-toggle">
+              <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div><a href="/#home-centre" class="black-text-t">The Centre</a></div>
+            <nav class="nav-dropdown-list w-dropdown-list"><a href="services/courses.html" class="nav-dropdown-link w-dropdown-link">Courses</a><a href="the-centre/calendar.html" class="nav-dropdown-link w-dropdown-link">Calendar</a><a href="the-centre/rules-and-etiquette.html" class="nav-dropdown-link w-dropdown-link">Rules &amp; Etiquette</a><a href="the-centre/careers.html" class="nav-dropdown-link w-dropdown-link">Careers</a></nav>
+          </div>
+          <a href="first-climb.html" class="nav-link-thin nav-link-white w-inline-block">
+            <div>First Climb</div>
+          </a>
+          <a href="pricing.html" class="nav-link-thin nav-link-white w-inline-block">
+            <div>Pricing</div>
+          </a>
+          <a href="about-us.html" class="nav-link-thin nav-link-white w-inline-block w--current">
+            <div>About Us</div>
+          </a>
+          <a href="gallery.html" class="nav-link-thin nav-link-white w-inline-block">
+            <div>Gallery</div>
+          </a>
+          <a href="faq.html" class="nav-link-thin nav-link-white w-inline-block">
+            <div>FAQ</div>
+          </a>
+        </nav>
+        <div class="menu-button-thin white-menu-button w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-bar-fixed yellow"></div>
+    <div id="Hero" data-w-id="10fc6462-6a0e-b105-2dfe-22979e7dd99e" class="hero-section hero-light-bg-section black-overlay">
+      <div class="page-header-wrapper white-text">
+        <h1 class="section-header">All Movements. No Ego.</h1>
+        <div class="divider center"></div>
+        <p>Our philosophy is shared by all our team members and we hope that you will join us too.</p>
+      </div>
+      <div class="_2-buttons"><a href="#aboutus-team" class="button margin-left-right w-button">The Team</a><a href="#aboutus-journey" class="button margin-left-right w-button">Our Journey</a></div>
+      <a data-ix="hero-scroll-mouse" href="#aboutus-team" class="scroll-mouse-link w-inline-block">
+        <div class="mouse-icon">
+          <div class="mouse-wheel-icon"></div>
+        </div>
+      </a>
+    </div>
+    <div id="aboutus-team" class="section">
+      <div class="section-header-wrapper">
+        <h2 class="section-header">Meet the Team</h2>
+        <div class="divider center"></div>
+        <p class="grey-text">Our team collectively has over 30 years of climbing experience and exposure at international climbing gyms. Our goal is to provide a nurturing environment for the Indian climbing scene to explode.</p>
+      </div>
+      <div class="wrapper w-container">
+        <ul class="staff w-list-unstyled">
+          <li class="staff-member">
+            <div data-ix="slide-right" class="side-content-small">
+              <h2 class="section-header">Vrinda Bhageria</h2>
+              <div class="divider"></div>
+              <h6>Founder and Boss</h6>
+              <p class="section-description">I started climbing in my final year of university Chicago. Until then I had never really played many sports or spent much time outdoors. I would struggle to even stay fit. Climbing changed all of that. It helped me not only get fit and become strong, but I gained immense confidence in other aspects of life. <br><br>With the opening of the gym, I hope to become a better climber and continue learning the nuances of a sport as technical as rock climbing.<br></p>
+            </div>
+            <div data-ix="slide-left" class="side-media">
+              <div class="frame reversed"><img src="images/vrinda_bhageria-copy.jpeg" class="frame-image reversed"></div>
+            </div>
+          </li>
+          <li class="staff-member">
+            <div data-ix="slide-right" class="side-content-small">
+              <h2 class="section-header">Yadu Bhageria</h2>
+              <div class="divider"></div>
+              <h6>Co-Founder</h6>
+              <p class="section-description">I started climbing because I got injured as a runner about a decade ago. Within a year, I had stopped running and I was only climbing. Slowly, it has become somewhat of an obsession for me. Now that I&#x27;m helping open a gym, I can devote even more time to it!<br><br>I like climbing because of the process of problem solving and execution involved in the physical movement.<br><br>Beyond climbing, my background involves studying Mathematics at Univeristy and dabbling in the markets.</p>
+            </div>
+            <div data-ix="slide-left" class="side-media">
+              <div class="frame reversed"><img src="images/yadu_bhageria.jpeg" srcset="images/yadu_bhageria-p-500.jpeg 500w, images/yadu_bhageria-p-800.jpeg 800w, images/yadu_bhageria.jpeg 896w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 43vw, (max-width: 991px) 40vw, 360px" class="frame-image reversed"></div>
+            </div>
+          </li>
+          <li class="staff-member">
+            <div data-ix="slide-right" class="side-content-small">
+              <h2 class="section-header">Rahul Ranjan</h2>
+              <div class="divider"></div>
+              <h6>Route Setting Coordinator</h6>
+              <p class="section-description">I started to climb in 2010 in the South Indian granite paradise of Hampi. Since then I have been collecting experiences in bouldering, sport climbing and mountaineering in places such as India, Spain and Malaysia. <br><br>In Malaysia, I worked as a route setter also. I am now ready to start a new chapter of my life at BoulderBox New Delhi.</p>
+            </div>
+            <div data-ix="slide-left" class="side-media">
+              <div class="frame reversed"><img src="images/rahul_rajan.jpeg" class="frame-image reversed"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="aboutus-journey" class="section-journey">
+      <div class="section-header-wrapper the-journey-header">
+        <h2 class="section-header white-text">The Journey so far</h2>
+        <div class="divider center"></div>
+        <a data-ix="hero-scroll-mouse" href="#timeline" class="scroll-mouse-link scroll-mouse-journey w-inline-block">
+          <div class="mouse-icon">
+            <div class="mouse-wheel-icon"></div>
+          </div>
+        </a>
+      </div>
+      <div id="timeline" class="timeline">
+        <div class="tl-item">
+          <div class="tl-bg bg-climbing"></div>
+          <div class="tl-year">
+            <p class="tl-paragraph">2009</p>
+          </div>
+          <div class="tl-content">
+            <h3>Starting Climbing</h3>
+            <p>We started climbing in separate continents. Vrinda started in Chicago, USA during her graphic design degree. I, Yadu, started slightly earlier at boarding school in Somerset, UK.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-bg bg-homewall"></div>
+          <div class="tl-year">
+            <p class="tl-paragraph">2011</p>
+          </div>
+          <div class="tl-content">
+            <h3>Wall at Home</h3>
+            <p>Back in Delhi, we found that facilities simply did not compare with the ones we started out on. Eventually our passion for climbing lead to the building of a bouldering facility at home. Over the years, we have had friends from all over the world climb and set with us at home.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-bg bg-vasantkunj"></div>
+          <div class="tl-year">
+            <p class="tl-paragraph">2016</p>
+          </div>
+          <div class="tl-content">
+            <h3>Finding a Location</h3>
+            <p>The demand for a world class climbing gym in the capital was and is very apparent to us. So two years ago, Vrinda started working to find an appropriate location for the gym. After countless site visits she finally decided on the Vasant Kunj site.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-bg bg-boulderbox"></div>
+          <div class="tl-year">
+            <p class="tl-paragraph">2018</p>
+          </div>
+          <div class="tl-content">
+            <h3>Getting Ready to Open</h3>
+            <p>About a year ago, the location was finalised and the work truly began with wall designs, construction and more. We now look forward to opening the centre very soon!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section about-us-careers-section">
+      <div class="wrapper">
+        <div class="center-wrapper">
+          <h2 class="section-header">Join Us</h2>
+          <div class="divider center"></div>
+          <p class="cta-description">Head over to our careers page to get more information about available job opportunities.<br><br>We&#x27;re currently hiring for operations roles around the centre.</p><a href="the-centre/careers.html" class="button w-button">Careers</a></div>
+      </div>
+    </div>
+    <div class="section no-top-padding no-bottom-padding">
+      <div class="wrapper w-container">
+        <div class="footer-v4"><a href="#HERO" id="go-to-top-button" class="vertical-scroll-footer w-inline-block"><img src="images/arrow-up-icon.svg"><div class="vertical-scroll-text footer-scroll-text">Go to Top</div></a>
+          <div class="footer-v4-about"><a href="index.html" class="footer-logo w-nav-brand"><img src="images/Logo_102x15_black.svg" width="204" class="image-8"></a>
+            <p class="paragraph-small">We are BoulderBox. We pride ourselves on providing a friendly and fun environment for climbing and other movements.</p>
+            <h5 class="heading pink-text">Hours</h5>
+            <p class="paragraph-small">Weekdays: 8am - 10pm<br>Weekends: 10am - 8pm (Provisional)</p>
+            <h5 class="heading pink-text">Location</h5>
+            <p class="paragraph-small">OCF, Sector-B, Pocket - 9, Vasant Kunj,
+              <br>New Delhi, 110070</p>
+            <h5 class="heading pink-text">Phone</h5>
+            <p class="paragraph-small">xxx - xxx - xxx</p>
+          </div>
+          <div class="footer-v2-column">
+            <h5>Navigation</h5><a href="/#home-centre" class="footer-link">The Centre</a><a href="first-climb.html" class="footer-link">First Climb</a><a href="pricing.html" class="footer-link">Pricing</a><a href="about-us.html" class="footer-link w--current">About Us</a><a href="gallery.html" class="footer-link">Gallery</a><a href="faq.html" class="footer-link">FAQ</a></div>
+          <div class="footer-v2-column">
+            <h5>Information</h5><a href="services/courses.html" class="footer-link">Courses</a><a href="the-centre/calendar.html" class="footer-link">Calendar</a><a href="the-centre/rules-and-etiquette.html" class="footer-link">Rules &amp; Etiquette</a><a href="the-centre/careers.html" class="footer-link">Careers</a>
+            <div class="div-block-2 w-clearfix"><a href="https://twitter.com/AlexHonnold" data-ix="social-icon" target="_blank" class="social-icon-container-footer w-inline-block"><img src="images/twitter-icon.svg" class="social-icon"><img src="images/twitter-icon-color.svg" class="social-icon-hover"></a><a href="https://facebook.com/climbatboulderbox" data-ix="social-icon" target="_blank" class="social-icon-container-footer w-inline-block"><img src="images/facebook-icon.svg" class="social-icon"><img src="images/facebook-icon-color.svg" class="social-icon-hover"></a><a href="https://instagram.com/theboulderbox" data-ix="social-icon" target="_blank" class="social-icon-container-footer w-inline-block"><img src="images/instagram-icon.svg" class="social-icon"><img src="images/instagram-icon-color.svg" class="social-icon-hover"></a><a href="https://www.youtube.com/channel/UC4eDCE38EiM0U9QnuO3_f_A" data-ix="social-icon" target="_blank" class="social-icon-container-footer w-inline-block"><img src="images/youtube-logo.svg" class="social-icon"><img src="images/youtube-logo-red.svg" class="social-icon-hover"></a></div>
+          </div>
+          <div class="footer-bottom">
+            <div>
+              <div class="footer-bottom-text-left">Created with <span class="heart-icon">lov</span> by <a data-rt-link-type="external" target="_blank" href="/works-pages/team" class="footer-bottom-link">the BoulderBox team</a></div>
+              <div class="footer-bottom-text-left">Powered by <a href="https://webflow.com/" target="_blank" class="footer-bottom-link">Webflow</a></div>
+            </div>
+            <div><a href="faq.html" class="footer-bottom-link-right">Legal Documents</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+</body>
+</html>
